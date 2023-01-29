@@ -1,0 +1,162 @@
+:root {  
+  --purple: rgb(123, 31, 162);
+  --violet: rgb(103, 58, 183);
+  --pink: rgb(244, 143, 177);
+}
+
+@keyframes background-pan {
+  from {
+    background-position: 0% center;
+  }
+  
+  to {
+    background-position: -100% center;
+  }
+}
+
+@keyframes float {
+  from, to {
+    transform: translate(-20%, -0%);
+  }
+  
+  50% {    
+    transform: translate(0%, -20%);
+  }
+}
+
+.magic{
+    background: linear-gradient(
+        to right, 
+        var(--purple),
+        var(--violet),
+        var(--pink),
+        var(--purple)
+    );
+    background-size: 200%;
+}
+
+#text:has(.anime-title:hover) .word:not(.anime-title){
+    opacity: 0.2;
+}
+
+.word {
+    transition: opacity 200ms ease-in-out;
+}
+
+.anime-title span{
+    font-family: Space Grotesk;
+    font-weight: bold;
+    line-height: 1.1;
+    display: inline-block;
+    animation: background-pan 5s linear infinite;
+    transition: all 800ms ease;
+    background: linear-gradient(
+        to right, 
+        var(--purple),
+        var(--violet),
+        var(--pink),
+        var(--purple)
+    );
+    background-size: 1000%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    white-space: nowrap;
+}
+
+.anime-title > .outer{
+    transition: all 800ms ease;
+}
+
+
+.anime-title:hover > .outer{
+    transition-duration: 800ms;
+}
+
+.anime-title:hover > .outer > .inner {
+  animation: float 3.5s ease infinite;
+}
+
+.anime-title:hover > .outer > .inner > .letter {
+    animation: background-pan 5s linear infinite;
+    transition: all 800ms ease;
+    background: linear-gradient(
+        to right, 
+        var(--purple),
+        var(--violet),
+        var(--pink),
+        var(--purple)
+    );
+    background-size: 1000%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    white-space: nowrap;
+}
+
+.inner{
+    animation-delay: -5000ms;
+}
+
+.letter{
+    animation-delay: 9000ms;
+}
+
+.anime-title:hover > .outer:nth-child(1) {
+    transform: translate(425%, 40%) rotate(-8deg) scale(120%, 120%);
+    transition-duration: 800ms;
+}
+.anime-title:hover > .outer:nth-child(2) {
+    transform: translate(86%, 60%) rotate(8deg) scale(120%, 120%);
+    transition-duration: 800ms;
+}
+.anime-title:hover > .outer:nth-child(9) {
+    transform: translate(220%, -30%) rotate(10deg) scale(120%, 120%);
+    transition-duration: 800ms;
+}
+.anime-title:hover > .outer:nth-child(11) {
+    transform: translate(450%, -20%) rotate(-3deg) scale(120%, 120%);
+    transition-duration: 800ms;
+}
+
+.anime-title:hover > .outer:nth-child(3) {
+    opacity: 0;
+    transform: scale(0%, 0%);
+    transition-duration: 800ms;
+}
+.anime-title:hover > .outer:nth-child(4) {
+    opacity: 0;
+    transform: scale(0%, 0%);
+    transition-duration: 800ms;
+}
+.anime-title:hover > .outer:nth-child(5) {
+    opacity: 0;
+    transform: scale(0%, 0%);
+    transition-duration: 800ms;
+}
+.anime-title:hover > .outer:nth-child(6) {
+    opacity: 0;
+    transform: scale(0%, 0%);
+    transition-duration: 800ms;
+}
+.anime-title:hover > .outer:nth-child(7) {
+    opacity: 0;
+    transform: scale(0%, 0%);
+    transition-duration: 800ms;
+}
+
+.anime-title:hover > .outer:nth-child(10) {
+    opacity: 0;
+    transform: scale(0%, 0%);
+    transition-duration: 800ms;
+}
+
+.anime-title:hover > .outer:nth-child(12) {
+    opacity: 0;
+    transform: scale(0%, 0%);
+    transition-duration: 800ms;
+}
+
+.anime-title:hover > .outer:nth-child(13) {
+    opacity: 0;
+    transform: scale(0%, 0%);
+    transition-duration: 800ms;
+}

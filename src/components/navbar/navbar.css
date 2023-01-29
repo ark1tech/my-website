@@ -1,0 +1,11 @@
+.item{
+    transition: opacity 200ms ease-in-out;
+}
+
+#item-list:hover .item {
+    opacity: 0.3;
+}
+
+#item-list:hover .item:hover {
+    opacity: 1;
+}
