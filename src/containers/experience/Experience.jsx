@@ -1,62 +1,174 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+// import { motion } from 'framer-motion';
 import AOS from 'aos';
-import { FaCircle } from "react-icons/fa";
 import 'aos/dist/aos.css';
 import './experience.css';
-// import { gsap, Power3 } from 'gsap';
-// import { ScrollTrigger }  from 'gsap/ScrollTrigger';
-// import './experience.css';
-// gsap.registerPlugin(ScrollTrigger);
+import { BsArrowRight } from 'react-icons/bs';
 
 const Experience = () => {
     AOS.init();
-    // const expRef = useRef(null);
-    // useEffect(() => {
-    //     const el = expRef.current;
-    //     gsap.fromTo(el, {opacity: 0}, {opacity: 1, duration: 1, delay: 1, scrollTrigger :{
-    //         trigger: el
-    //     }});
-    // }, []);
+
+    useEffect(() => {
+      document.getElementById("deck").onmousemove = e => {
+        for(const card of document.getElementsByClassName("card")) {
+          const rect = card.getBoundingClientRect(),
+                x = e.clientX - rect.left,
+                y = e.clientY - rect.top;
+          card.style.setProperty("--mouse-x", `${x}px`);
+          card.style.setProperty("--mouse-y", `${y}px`);
+        };
+      }
+    }, [])
+    
     return (
-        <div id = "experience" class = "snap-start w-full h-screen">
-            <div id = "experience-text" class = "mx-auto px-40 py-40">
-                <h1 data-aos="slide-right" data-aos-delay="200"
-        data-aos-duration="1000" class ="exp-title font-header text-6xl md:text-9xl font-bold"> experience </h1>
-            </div>
-            <div class="main">
-                <div class="container" data-aos="fade" data-aos-delay="200" data-aos-duration="1000">
-                    <ul>
-                        <li>
-                            <h3 class="title">Front End Developer</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem eaque quidem esse? Incidunt, odit beatae?</p>
-                            <span class="circle"></span>
-                            <span class="date">January 2022</span>
-                        </li>
-                        <li>
-                            <h3 class="title">Back End Developer</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem eaque quidem esse? Incidunt, odit beatae?</p>
-                            <span class="circle"></span>
-                            <span class="date">February 2022</span>
-                        </li>
-                        <li>
-                            <h3 class="title">Full Stack Developer</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem eaque quidem esse? Incidunt, odit beatae?</p>
-                            <a href="#">Read More ></a>
-                            <span class="circle"></span>
-                            <span class="date">March 2022</span>
-                        </li>
-                        <li>
-                            <h3 class="title">App Developer</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem eaque quidem esse? Incidunt, odit beatae?</p>
-                            <span class="circle"></span>
-                            <span class="date">April 2022</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div id = "experience-text" class = "mx-auto px-40 py-40">
-                <h1 data-aos="slide-right" data-aos-delay="200"
-        data-aos-duration="1000" class ="exp-title font-header text-6xl md:text-9xl font-bold"> experience </h1>
+        <div id = "experience" class = "flex-col sticky md:px-40 px-10 py-20">
+            <h1 data-aos="slide-right" data-aos-delay="25" data-aos-duration="1000" class ="cursor-pointer exp-title font-header text-6xl md:text-9xl font-bold">
+            <span class = "outer1">
+              <span class = "inner1">
+                <span class = "letter1">e</span>
+              </span>
+            </span> 
+            <span class = "outer1">
+              <span class = "inner1">
+                <span class = "letter1">x</span>
+              </span>
+            </span>
+            <span class = "outer1">
+              <span class = "inner1">
+                <span class = "letter1">p</span>
+              </span>
+            </span>
+            <span class = "outer1">
+              <span class = "inner1">
+                <span class = "letter1">e</span>
+              </span>
+            </span>
+            <span class = "outer1">
+              <span class = "inner1">
+                <span class = "letter1">r</span>
+              </span>
+            </span>
+            <span class = "outer1">
+              <span class = "inner1">
+                <span class = "letter1">i</span>
+              </span>
+            </span>
+            <span class = "outer1">
+              <span class = "inner1">
+                <span class = "letter1">e</span>
+              </span>
+            </span>
+            <span class = "outer1">
+              <span class = "inner1">
+                <span class = "letter1">n</span>
+              </span>
+            </span>
+            <span class = "outer1">
+              <span class = "inner1">
+                <span class = "letter1">c</span>
+              </span>
+            </span>
+            <span class = "outer1">
+              <span class = "inner1">
+                <span class = "letter1">e</span>
+              </span>
+            </span>
+            </h1>
+            <div id = "deck">
+              <div data-aos="zoom-in-down" data-aos-delay="100" data-aos-duration="1000" class = "word1 items-center flex md:flex-row flex-col top-0 pb-10 pt-20"> 
+                  <img class = "md:mr-10 mr-0 md:mb-0 mb-10 h-20 w-20" src={require("../../assets/kerser.png")} alt ="CURSOR logo"></img>
+                  <h1 class = "org-date text-white text-4xl font-semibold tracking-[0.2em]"> UP Association of Computer Science Majors (<span class = "under">UP CURSOR</span>) </h1>
+              </div>
+              <div data-aos="fade-down" data-aos-delay="400" data-aos-duration="1000" class = "word1 timeline border-l-[1px] border-white border-opacity-[0.1] ml-3 mt-3 py-16 space-y-14">
+                  <div id = "cards" class = "word1 relative">
+                      <div class = "animate-pulse">
+                      <div class = "dot absolute bg-[#ad14ff] mt-[10rem] -ml-[0.65rem] h-5 w-5 rounded-full border-4 border-black "></div>
+                      </div>
+                      <div data-aos="flip-up" data-aos-delay="100" data-aos-duration="1000" class = "card p-10  ml-20 rounded-[10px] border-solid border-white border-opacity-[0.1] border-[1px]">
+                          <p class = "timeline-date font-light text-white">JANUARY 2023</p>
+                          <h3 class = "anime text-2xl font-semibold text-white mt-5"> Speaker Relations & Facilitator </h3>
+                          <p class = "text-white font-normal italic mb-5"> Relevant Skills: Management, Hosting</p>
+                          <ul class = "ml-10">
+                              <li class = "list-disc font-normal text-white">Handled company representatives from <a href = "https://www.maya.ph/" target="_blank" rel="noopener noreferrer"> 
+                                  <span class = "under text-purple-300 font-header">Maya Philippines</span> 
+                                  </a> and <a href = "https://www.twistresources.com/" target="_blank" rel="noopener noreferrer"> 
+                                      <span class = "under text-purple-300 font-header">TwistResources</span>
+                                  </a> that guaranteed their talks were well-delivered to <span class ="text-purple-300 font-header">400+ registered participants.</span></li>
+                              <li class = "list-disc font-normal text-white">Hosted company booths that propelled the interests of participants in joining the company. </li>
+                          </ul>
+                          <div class = "flex flex-row cursor-pointer text-1xl font-semibold text-white mt-10">
+                              <BsArrowRight size = {20} class = "mr-2 mt-[0.1rem]" />
+                              <mb class = "font-header under"> Learn More </mb>
+                          </div>
+                      </div>
+                  </div>
+                  <div id = "cards" class = "relative">
+                      <div class = "animate-pulse">
+                      <div class = "dot absolute bg-[#ad14ff] mt-[9rem] -ml-[0.65rem] h-5 w-5 rounded-full border-4 border-black "></div>
+                      </div>
+                      <div data-aos="flip-up" data-aos-delay="50" data-aos-duration="1000" class = "card p-10 ml-20 bg-white bg-opacity-[0.01] rounded-[10px] border-solid border-white border-opacity-[0.1] border-[1px]">
+                          <p class = "timeline-date font-light text-white">NOVEMBER - DECEMBER 2022</p>
+                          <h3 class = "anime text-2xl font-semibold text-white mt-5"> Batch Head </h3>
+                          <p class = "text-white font-normal italic mb-5"> Relevant Skills: Project Management, Collaborative Work, Communication</p>
+                          <ul class = "ml-10">
+                              <li class = "list-disc font-normal text-white">Spearheaded a team of <a href = "#" target="_blank" rel="noopener noreferrer"><span class ="text-purple-300 font-header under">46 applicants</span></a> in organizing a 2-day webinar event that garnered <span class ="text-purple-300 font-header">100+ active participants</span>.</li>
+                              <li class = "list-disc font-normal text-white">Supervised 5 committees that fast-tracked an event organization by <span class ="text-purple-300 font-header under">at least 75%</span>.</li>
+                          </ul>
+                          <div class = "flex flex-row cursor-pointer text-1xl font-semibold text-white mt-10">
+                              <BsArrowRight size = {20} class = "mr-2 mt-[0.1rem]" />
+                              <h4  class = "font-header under"> Learn More </h4>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div data-aos="zoom-in-down" data-aos-delay="100" data-aos-duration="1000" class = "items-center flex md:flex-row flex-col top-0 py-10"> 
+                  <img class = "md:mr-10 mr-0 md:mb-0 mb-10 h-20 w-20" src={require("../../assets/chisigma.png")} alt ="Chi Sigma logo"></img>
+                  <h1 class = "org-date text-white text-4xl font-semibold tracking-[0.2em]">COMSCI@UP.BAG</h1>
+              </div>
+              <div  data-aos="fade-down" data-aos-delay="400" data-aos-duration="1000" class = "timeline border-l-[1px] border-white border-opacity-[0.1] ml-3 mt-3 py-16 space-y-14">
+                  <div id = "cards" class = "relative">
+                      <div class = "animate-pulse">
+                      <div class = "dot absolute bg-[#ad14ff] mt-[9rem] -ml-[0.65rem] h-5 w-5 rounded-full border-4 border-black "></div>
+                      </div>  
+                      <div data-aos="flip-up" data-aos-delay="50" data-aos-duration="1000" class = "card p-10 ml-20 bg-white bg-opacity-[0.01] rounded-[10px] border-solid border-white border-opacity-[0.1] border-[1px]">
+                          <p class = "timeline-date font-light text-white">OCTOBER 2021 - AUGUST 2022</p>
+                          <h3 class = "anime text-2xl font-semibold text-white mt-5"> Public Relations Committee Member </h3>
+                          <p class = "text-white font-normal italic mb-5"> Relevant Skills: Graphic Design, Collaborative Work, Public Relations, Management</p>
+                          <ul class = "ml-10">
+                              <li class = "list-disc font-normal text-white">Created publicity materials that generated <span class ="text-purple-300 font-header">at least 50% increase</span> in event attendance.</li>
+                              <li class = "list-disc font-normal text-white">Facilitated a quiz bee competition that gathered 8 different participating schools.</li>
+                              <li class = "list-disc font-normal text-white">Managed a competitive programming competition of 9 competing teams.</li>
+                          </ul>
+                          <div class = "flex flex-row cursor-pointer text-1xl font-semibold text-white mt-10">
+                              <BsArrowRight size = {20} class = "mr-2 mt-[0.1rem]" />
+                              <h4  class = "font-header under"> Learn More </h4>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div data-aos="zoom-in-down" data-aos-delay="100" data-aos-duration="1000" class = "items-center flex md:flex-row flex-col top-0 py-10"> 
+                  <img class = "md:mr-10 mr-0 md:mb-0 mb-10 h-20 w-20" src={require("../../assets/upbcs2.png")} alt ="UPB USC CS logo"></img>
+                  <h1 class = "org-date text-white text-4xl font-semibold tracking-[0.2em]">UP Baguio Volunteer Corps</h1>
+              </div>
+              <div data-aos="fade-down" data-aos-delay="400" data-aos-duration="1000" class = "timeline border-l-[1px] border-white border-opacity-[0.1] ml-3 mt-3 py-16 space-y-14">
+                  <div id = "cards" class = "relative">
+                      <div class = "animate-pulse">
+                      <div class = "dot absolute bg-[#ad14ff] mt-[9rem] -ml-[0.65rem] h-5 w-5 rounded-full border-4 border-black "></div>
+                      </div>
+                      <div data-aos="flip-up" data-aos-delay="50" data-aos-duration="1000" class = "card p-10 ml-20 bg-white bg-opacity-[0.01] rounded-[10px] border-solid border-white border-opacity-[0.1] border-[1px]">
+                          <p class = "timeline-date font-light text-white">SEPTEMBER 2021 - DECEMBER 2022</p>
+                          <h3 class = "anime text-2xl font-semibold text-white mt-5"> Public Relations Team Head </h3>
+                          <p class = "text-white font-normal italic mb-5"> Relevant Skills: Graphic Design, Collaborative Work, Public Relations</p>
+                          <ul class = "ml-10">
+                              <li class = "list-disc font-normal text-white">Led a team to make publicity materials that piqued the interest of <span class ="text-purple-300 font-header">200+ students</span>.</li>
+                          </ul>
+                          <div class = "flex flex-row cursor-pointer text-1xl font-semibold text-white mt-10">
+                              <BsArrowRight size = {20} class = "mr-2 mt-[0.1rem]" />
+                              <h4  class = "font-header under"> Learn More </h4>
+                          </div>
+                      </div>
+                  </div>
+              </div>
             </div>
         </div>
     )

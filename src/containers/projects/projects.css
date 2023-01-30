@@ -26,89 +26,6 @@
   }
 }
 
-.card {
-    padding-left: 3.4rem;
-    padding-right: 3.4rem;
-    transition: border 400ms;
-    background-color: rgba (255, 255, 255, 0.01);
-    backdrop-filter: blur(3.5px);
-    -webkit-backdrop-filter: blur(3.5px);
-}
-
-.card > *{
-    transition: transform 400ms ease;
-    transform: translate(0%, 0%);
-}
-
-.card:hover > *{
-    transform: translate(1%, 0%);
-}
-
-.card:hover::before {
-    opacity: 1; 
-}
-
-.card::before,
-.card::after {
-    border-radius: inherit;
-    content: "";
-    height: 100%;
-    left: 0px;
-    opacity: 0;
-    position: absolute;
-    top: 0px;
-    transition: opacity 500ms;
-    width: 100%;
-}
-
-.card::before {
-    background: radial-gradient(
-    1200px circle at var(--mouse-x) var(--mouse-y), 
-    rgba(255, 255, 255, 0.06),
-    transparent 60%
-    );
-    z-index: -1;
-}
-
-.card::after {  
-    background: radial-gradient(
-    1200px circle at var(--mouse-x) var(--mouse-y), 
-    rgba(255, 255, 255, 0.6),
-    transparent 60%
-    );
-    z-index: -3;
-}
-
-.anime{
-    @apply 
-    bg-gradient-to-br from-pink-400 via-violet-400 to-purple-500;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-#experience:has(.exp-title:hover) .word1:not(.exp-title){
-    opacity: 0.2;
-}
-
-.word1 {
-    transition: opacity 200ms ease-in-out;
-}
-
-.exp-title{
-    animation: background-pan 2.5s linear infinite;
-    background: linear-gradient(
-        to right, 
-        var(--purple),
-        var(--violet),
-        var(--pink),
-        var(--purple)
-    );
-    background-size: 200%;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    white-space: nowrap;
-}
-
 .under {
     cursor: pointer;
     background: 
@@ -123,7 +40,7 @@
     background-size: 100% 0.1em, 0 0.1em;
 }
 
-.exp-title span{
+.pro-title span{
     font-family: Space Grotesk;
     font-weight: bold;
     line-height: 1.1;
@@ -143,19 +60,19 @@
     white-space: nowrap;
 }
 
-.exp-title > .outer1{
+.pro-title > .outer2{
     transition: all 800ms ease;
 }
 
-.exp-title:hover > .outer1{
+.pro-title:hover > .outer2{
     transition-duration: 800ms;
 }
 
-.exp-title:hover > .outer1 > .inner1 {
+.pro-title:hover > .outer2 > .inner2 {
   animation: float 3.5s ease infinite;
 }
 
-.exp-title:hover > .outer1 > .inner1 > .letter1 {
+.pro-title:hover > .outer2 > .inner2 > .letter2 {
     animation: background-pan 5s linear infinite;
     transition: all 800ms ease;
     background: linear-gradient(
@@ -171,60 +88,59 @@
     white-space: nowrap;
 }
 
-.inner1{
+.inner2{
     animation-delay: -5000ms;
 }
 
-.letter1{
+.letter2{
     animation-delay: 9000ms;
 }
 
-.exp-title:hover > .outer1:nth-child(8) {
+.pro-title:hover > .outer2:nth-child(8) {
     transform: translate(-425%, 0%) rotate(-8deg) scale(120%, 120%);
     transition-duration: 800ms;
 }
-.exp-title:hover > .outer1:nth-child(6) {
+.pro-title:hover > .outer2:nth-child(6) {
     transform: translate(-340%, 10%) rotate(-10deg) scale(120%, 120%);
     transition-duration: 800ms;
 }
-.exp-title:hover > .outer1:nth-child(9) {
+.pro-title:hover > .outer2:nth-child(9) {
     transform: translate(-320%, -25%) rotate(-10deg) scale(120%, 120%);
     transition-duration: 800ms;
 }
-.exp-title:hover > .outer1:nth-child(7) {
+.pro-title:hover > .outer2:nth-child(7) {
     transform: translate(45%, 0%) rotate(8deg) scale(120%, 120%);
     transition-duration: 800ms;
 }
 
-.exp-title:hover > .outer1:nth-child(1) {
+.pro-title:hover > .outer2:nth-child(1) {
     opacity: 0;
     transform: scale(0%, 0%);
     transition-duration: 800ms;
 }
-.exp-title:hover > .outer1:nth-child(2) {
+.pro-title:hover > .outer2:nth-child(2) {
     opacity: 0;
     transform: scale(0%, 0%);
     transition-duration: 800ms;
 }
-.exp-title:hover > .outer1:nth-child(3) {
+.pro-title:hover > .outer2:nth-child(3) {
     opacity: 0;
     transform: scale(0%, 0%);
     transition-duration: 800ms;
 }
-.exp-title:hover > .outer1:nth-child(4) {
+.pro-title:hover > .outer2:nth-child(4) {
     opacity: 0;
     transform: scale(0%, 0%);
     transition-duration: 800ms;
 }
-.exp-title:hover > .outer1:nth-child(5) {
-    opacity: 0;
-    transform: scale(0%, 0%);
-    transition-duration: 800ms;
-}
-
-.exp-title:hover > .outer1:nth-child(10) {
+.pro-title:hover > .outer2:nth-child(5) {
     opacity: 0;
     transform: scale(0%, 0%);
     transition-duration: 800ms;
 }
 
+.pro-title:hover > .outer2:nth-child(10) {
+    opacity: 0;
+    transform: scale(0%, 0%);
+    transition-duration: 800ms;
+}

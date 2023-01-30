@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { FaBars, FaTimes } from "react-icons/fa";
+import { Link } from 'react-scroll'; 
 import './navbar.css';
 
 const Navbar = () => {
@@ -33,7 +34,7 @@ const Navbar = () => {
         <div id = "item-list">
             <ul class = "hidden md:flex font-header item-list">
                 {links.map(({i, link}) => (
-                    <li key={i} class = "px-10 cursor-pointer item">{link}</li>
+                    <li key={i} class = "px-10 cursor-pointer item"><Link to={link} smooth duration ={500} offset = {-50}>{link}</Link></li>
                 ))}
             </ul>
         </div>
@@ -44,7 +45,7 @@ const Navbar = () => {
             <div id = "item-list" class = "md:hidden">
                 <ul class = "flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-black text-white">
                 {links.map(({id, link}) => (
-                    <li key={id} class = "py-10 cursor-pointer item">{link}</li>
+                    <li key={id} class = "py-10 cursor-pointer item"><Link onClick = {() => setNav(!nav)} to ={link} smooth duration ={500} >{link}</Link></li>
                 ))}
                 {/* <li class = "pt-40 px-20 font-extralight"> made by ark1 </li> */}
                 </ul>

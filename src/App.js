@@ -1,5 +1,5 @@
 import { Navbar, Particle } from './components'; 
-import { Header, Experience } from './containers'; 
+import { Header, Experience, Projects } from './containers';
 import './index.css';
 import { useRef, useEffect } from 'react';
 import gsap from 'gsap';
@@ -24,6 +24,9 @@ function App() {
         </div>
         <div>
           <Experience />
+        </div>
+        <div>
+          <Projects />
         </div>
       </div>
     </div>
