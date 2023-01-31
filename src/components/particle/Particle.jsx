@@ -21,11 +21,11 @@ const Particle = () => {
       options={{
         "particles": {
           "number": {
-            "value": 63,
+            "value": 32,
             "density": {
               "enable": true,
               "value_area": 800
-            }
+            } 
           },
           "color": {
             "value": "#e48eff"
