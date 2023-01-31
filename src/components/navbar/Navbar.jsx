@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from 'react-scroll'; 
 import './navbar.css';
+// import { useAutoAnimate } from '@formkit/auto-animate/react'
 
 const Navbar = () => {
     
@@ -25,6 +26,8 @@ const Navbar = () => {
             link: "contact",
         }
     ]
+
+    // const [listRef] = useAutoAnimate();
 
     return (
     <div class = "flex justify-between items-center w-full h-20 md:px-40 px-10 bg-black text-white fixed shadow-[0_15px_15px_15px_rgba(0,0,0,1)]">

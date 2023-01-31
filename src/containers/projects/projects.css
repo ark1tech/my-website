@@ -97,49 +97,39 @@
 }
 
 .pro-title:hover > .outer2:nth-child(8) {
-    transform: translate(-425%, 0%) rotate(-8deg) scale(120%, 120%);
+    transform: translate(-625%, 0%) rotate(-8deg) scale(120%, 120%);
     transition-duration: 800ms;
 }
 .pro-title:hover > .outer2:nth-child(6) {
-    transform: translate(-340%, 10%) rotate(-10deg) scale(120%, 120%);
+    transform: translate(-279%, 10%) rotate(-270deg) scale(120%, 120%);
     transition-duration: 800ms;
 }
-.pro-title:hover > .outer2:nth-child(9) {
-    transform: translate(-320%, -25%) rotate(-10deg) scale(120%, 120%);
-    transition-duration: 800ms;
-}
-.pro-title:hover > .outer2:nth-child(7) {
-    transform: translate(45%, 0%) rotate(8deg) scale(120%, 120%);
+.pro-title:hover > .outer2:nth-child(1) {
+    transform: translate(360%, 10%) rotate(8deg) scale(120%, 120%);
     transition-duration: 800ms;
 }
 
-.pro-title:hover > .outer2:nth-child(1) {
-    opacity: 0;
-    transform: scale(0%, 0%);
-    transition-duration: 800ms;
-}
 .pro-title:hover > .outer2:nth-child(2) {
-    opacity: 0;
-    transform: scale(0%, 0%);
+    transform: translate(610%, -10%) rotate(-12deg) scale(120%, 120%);
     transition-duration: 800ms;
 }
+
 .pro-title:hover > .outer2:nth-child(3) {
-    opacity: 0;
-    transform: scale(0%, 0%);
+    transform: translate(420%, 0%) rotate(8deg) scale(120%, 120%);
     transition-duration: 800ms;
 }
+
 .pro-title:hover > .outer2:nth-child(4) {
-    opacity: 0;
-    transform: scale(0%, 0%);
+    transform: translate(1020%, -20%) rotate(189deg) scale(120%, 120%);
     transition-duration: 800ms;
 }
+
 .pro-title:hover > .outer2:nth-child(5) {
     opacity: 0;
     transform: scale(0%, 0%);
     transition-duration: 800ms;
 }
-
-.pro-title:hover > .outer2:nth-child(10) {
+.pro-title:hover > .outer2:nth-child(7) {
     opacity: 0;
     transform: scale(0%, 0%);
     transition-duration: 800ms;

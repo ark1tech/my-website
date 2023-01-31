@@ -71,7 +71,7 @@ const Header = () => {
             </span>
           </h1>
         </div>
-        <p class = "word text-center w-full text-white font-[200] tracking-[0.2em] pl-1.5 pt-6 pb-10"> I'm a <span class = "under font-header font-[400]">frontend developer</span> and <br></br> a <span class = "font-header font-[400] under">data science enthusiast</span> <br></br> from UP Diliman. </p>
+        <p class = "word text-center w-full text-white font-[200] tracking-[0.2em] pl-1.5 pt-6 pb-10"><span class = "under font-header font-[400]">frontend developer</span>, <span class = "font-header font-[400] under">datasci enthusiast</span>, <br />and <span class = "under font-header font-[400]">ultimate cat lover</span> 😼 <br></br> from UP Diliman. </p>
         <div class = "word flex flex-col items-center mx-auto">
           <div class="w-fit rounded-[1.25em] bg-gradient-to-br from-pink-400 via-violet-500 to-purple-500 p-[0.125em]">
             <div class="cursor-pointer flex w-fit rounded-[1.25em] items-center justify-center bg-black hover:bg-transparent duration-1000 back px-6 py-1">
