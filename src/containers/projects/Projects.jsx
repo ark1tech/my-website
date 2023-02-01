@@ -10,12 +10,12 @@ import { SiFigma,
          SiJava,
          SiTailwindcss
   } from 'react-icons/si';
-import {BsArrowRight} from 'react-icons/bs';
+import { BsArrowRight, BsArrowDown } from 'react-icons/bs';
 
 
 const Projects = () => {
   return (
-    <div id = "projects" class = "flex-col sticky md:px-40 px-10 py-20">
+    <div id = "projects" class = "flex-col sticky md:px-40 px-10 pt-20">
       <h1 data-aos="slide-right" data-aos-delay="25" data-aos-duration="1000" class ="w-fit cursor-pointer pro-title font-header text-6xl md:text-9xl font-bold">
         <span class = "outer2">
           <span class = "inner2">
@@ -62,12 +62,12 @@ const Projects = () => {
         <div data-aos="fade-down" data-aos-delay="400" data-aos-duration="1000" class = "word1 timeline border-l-[1px] border-white border-opacity-[0.1] md:ml-[2.3rem] ml-1 mt-3 py-16 space-y-14">     
           <div id = "cards" class = "word1 relative z-[3]">
               <div class = "animate-pulse">
-              <div class = "dot absolute bg-[#ad14ff] mt-[10rem] -ml-[0.65rem] h-5 w-5 rounded-full border-4 border-black ">
+              <div class = "dot absolute bg-[#ad14ff] mt-[13rem] -ml-[0.65rem] h-5 w-5 rounded-full border-4 border-black ">
               </div>
               </div>
               <div class ="flex flex-col justify-start">
                 <div data-aos="flip-up" data-aos-delay="100" data-aos-duration="1000" class = "card flex md:flex-row flex-col p-10 md:ml-20 ml-5 rounded-[10px] border-solid border-white border-opacity-[0.1] border-[1px]">
-                  <div class = "order-2  splinez w-fit -mt-32 -mb-[10rem] -mr-[4rem]">
+                  <div class = "order-2 splinez w-fit -mt-[8rem] -mb-[10rem] md:-mr-[4rem] mr-[20rem]">
                     <div class = "text-purple-300 absolute right-[3rem] bottom-[6rem] flow flow-col space-y-3">
                       <div class= "icon-card w-fit h-fit  p-5 border-solid border-white border-[1px] border-opacity-[0.1] rounded-[10px]">
                         <SiFigma size ={35} />
@@ -76,21 +76,20 @@ const Projects = () => {
                         <SiAdobeillustrator size ={35} />
                       </div>
                     </div>
-                    <Spline  scene="https://prod.spline.design/NvcNCgGmONQmmVUG/scene.splinecode" />
+                    <Spline class ="md:scale-[1] scale-[0.5]" scene="https://prod.spline.design/NvcNCgGmONQmmVUG/scene.splinecode" />
                   </div>  
                   <div>
                     <p class = "timeline-date font-light text-white">DECEMBER 2022</p>
                     <h3 class = "anime text-2xl font-semibold text-white my-5"> Palengcourier </h3>
                     <p class = "ml-7 list-disc font-normal text-white">
-                      Palengcourier, a portmanteau for palengke and courier, is an application that lets you connect
-                      with your nearest public markets, compare and contrast prices different prices, and find
-                      experienced palengke shoppers to assist you in tending to your needs, so you can purchase
-                      fresh, high quality local produce for a local price, with the convenience of doing it all from your
-                      phone.
+                      In this project, I made a <span class = " text-purple-300 font-header">prototype for a mobile application</span> designed to connect users to their nearest public markets. 
+                      The prototype was created using Figma with some elements from Adobe Illustrator. 
+                      <br /> <br />
+                      It takes into account <span class = " text-purple-300 font-header">important concepts of UI/UX design</span> such as ease of navigation, visual consistency, and intuitive interaction design <span class = " text-purple-300 font-header">to provide users with a seamless experience</span>. 
                     </p>
                     <div class = "flex flex-row cursor-pointer text-1xl font-semibold text-white mt-10">
                         <BsArrowRight size = {20} class = "mr-2 mt-[0.1rem]" />
-                        <a href = "https://www.facebook.com/CURSOR.Tackle" target="_blank" rel="noopener noreferrer" class = "font-header under">Learn More </a>
+                        <a href = "https://www.figma.com/proto/jFhh1lTwVxHZjzjnm0d1p1/Palengcourier?node-id=1%3A132&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A132&hotspot-hints=0" target="_blank" rel="noopener noreferrer" class = "font-header under">View on Figma</a>
                     </div>
                   </div>
                 </div>
@@ -98,12 +97,12 @@ const Projects = () => {
           </div>
           <div id = "cards" class = "word1 relative z-[1]">
               <div class = "animate-pulse">
-              <div class = "dot absolute bg-[#ad14ff] mt-[10rem] -ml-[0.65rem] h-5 w-5 rounded-full border-4 border-black ">
+              <div class = "dot absolute bg-[#ad14ff] mt-[15rem] -ml-[0.65rem] h-5 w-5 rounded-full border-4 border-black ">
               </div>
               </div>
               <div class ="flex flex-col justify-start">
                 <div data-aos="flip-up" data-aos-delay="100" data-aos-duration="1000" class = "card flex md:flex-row flex-col p-10 md:ml-20 ml-5 rounded-[10px] border-solid border-white border-opacity-[0.1] border-[1px]">
-                  <div class = "order-2 splinez ml-[2rem] -mb-[5rem]">
+                  <div class = "order-2 md:scale-[1] scale-[0.5] splinez ml-[2rem] -mb-[4.7rem]">
                     <div div class = "text-purple-300 absolute right-0 bottom-[3rem] flow flow-col space-y-3">
                       <div class= "icon-card w-fit h-fit  p-5 border-solid border-white border-[1px] border-opacity-[0.1] rounded-[10px]">
                         <SiJava size ={35} />
@@ -112,18 +111,20 @@ const Projects = () => {
                     <Spline  scene="https://prod.spline.design/gsoKQX9wUGvXOt7q/scene.splinecode" />
                   </div>  
                   <div>
-                    <p class = "timeline-date font-light text-white">DECEMBER 2022</p>
-                    <h3 class = "anime text-2xl font-semibold text-white my-5"> Palengcourier </h3>
+                    <p class = "timeline-date font-light text-white">MAY 2022</p>
+                    <h3 class = "anime text-2xl font-semibold text-white my-5"> Student Database GUI </h3>
                     <p class = "ml-7 list-disc font-normal text-white">
-                      Palengcourier, a portmanteau for palengke and courier, is an application that lets you connect
-                      with your nearest public markets, compare and contrast prices different prices, and find
-                      experienced palengke shoppers to assist you in tending to your needs, so you can purchase
-                      fresh, high quality local produce for a local price, with the convenience of doing it all from your
-                      phone.
+                    This project is an interactive offline database system aimed at providing accessible student services. 
+                    <br/>                      
+                    <br/>
+                    The database was built using <span class = " text-purple-300 font-header">Java Swing GUI and utilizes the principles of object-oriented programming and file handling</span>. 
+                    It also features a <span class = " text-purple-300 font-header">visually appealing interface</span> that was carefully crafted to help users quickly find the information they need. 
                     </p>
                     <div class = "flex flex-row cursor-pointer text-1xl font-semibold text-white mt-10">
                         <BsArrowRight size = {20} class = "mr-2 mt-[0.1rem]" />
-                        <a href = "https://www.facebook.com/CURSOR.Tackle" target="_blank" rel="noopener noreferrer" class = "font-header under">Learn More </a>
+                        <a href = "https://github.com/ark1tech/Student-Database-GUI" target="_blank" rel="noopener noreferrer" class = "font-header under">View on GitHub</a>
+                        <a class ="font-header mx-[0.5rem]">  •  </a>
+                        <a href = "https://drive.google.com/file/d/1qgVCh2HrFKbS44WqITqGjSo5wNRrCRBM/view?usp=sharing" target="_blank" rel="noopener noreferrer" class = "font-header under">See documentation</a>
                     </div>
                   </div>
                 </div>
@@ -131,12 +132,12 @@ const Projects = () => {
           </div>
           <div id = "cards" class = "word1 relative z-[2]">
               <div class = "animate-pulse">
-              <div class = "dot absolute bg-[#ad14ff] mt-[10rem] -ml-[0.65rem] h-5 w-5 rounded-full border-4 border-black ">
+              <div class = "dot absolute bg-[#ad14ff] mt-[15rem] -ml-[0.65rem] h-5 w-5 rounded-full border-4 border-black ">
               </div>
               </div>
               <div class ="flex flex-col justify-start">
                 <div data-aos="flip-up" data-aos-delay="100" data-aos-duration="1000" class = "card flex md:flex-row flex-col p-10 md:ml-20 ml-5 rounded-[10px] border-solid border-white border-opacity-[0.1] border-[1px]">
-                  <div class = "order-2 splinez ml-[2rem] -mb-[5rem]">
+                  <div class = "order-2 md:scale-[1] scale-[0.5] splinez ml-[2rem] -mb-[4.7rem]">
                     <div div class = "text-purple-300 absolute right-0 bottom-[3rem] flow flow-col space-y-3">
                       <div class= "icon-card w-fit h-fit  p-5 border-solid border-white border-[1px] border-opacity-[0.1] rounded-[10px]">
                         <SiReact size ={35} />
@@ -157,18 +158,19 @@ const Projects = () => {
                     <Spline scene="https://prod.spline.design/SgHRN5EjFhLDKUZs/scene.splinecode" />
                   </div>  
                   <div>
-                    <p class = "timeline-date font-light text-white">DECEMBER 2022</p>
-                    <h3 class = "anime text-2xl font-semibold text-white my-5"> Palengcourier </h3>
+                    <p class = "timeline-date font-light text-white">JANUARY 2023</p>
+                    <h3 class = "anime text-2xl font-semibold text-white my-5"> Uhhh... this website </h3>
                     <p class = "ml-7 list-disc font-normal text-white">
-                      Palengcourier, a portmanteau for palengke and courier, is an application that lets you connect
-                      with your nearest public markets, compare and contrast prices different prices, and find
-                      experienced palengke shoppers to assist you in tending to your needs, so you can purchase
-                      fresh, high quality local produce for a local price, with the convenience of doing it all from your
-                      phone.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. <span class = " text-purple-300 font-header">Sed euismod euismod tempor</span>. Quisque non facilisis augue. 
+                    Fusce varius, eros non commodo suscipit, <span class = " text-purple-300 font-header">sapien velit bibendum justo, vel sagittis velit risus at dolor</span>.
+                    Proin commodo, lacus eu rutrum tempor, sapien diam luctus nunc. 
+                    <br/> <br/>
+                    Just kidding... this website showcases my personality and skills as a frontend developer.
+                    I hope you liked it! 💜
                     </p>
                     <div class = "flex flex-row cursor-pointer text-1xl font-semibold text-white mt-10">
-                        <BsArrowRight size = {20} class = "mr-2 mt-[0.1rem]" />
-                        <a href = "https://www.facebook.com/CURSOR.Tackle" target="_blank" rel="noopener noreferrer" class = "font-header under">Learn More </a>
+                        <BsArrowDown size = {20} class = "mr-2 mt-[0.1rem]" />
+                        <a class = "font-header under">Continue scrolling down! </a>
                     </div>
                   </div>
                 </div>

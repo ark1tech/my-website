@@ -15,11 +15,11 @@ const Navbar = () => {
         },
         {
             id: 2,
-            link: "experience",
+            link: "projects",
         },
         {
             id: 3,
-            link: "projects",
+            link: "experience",
         },
         {
             id: 4,
@@ -37,7 +37,7 @@ const Navbar = () => {
         <div id = "item-list">
             <ul class = "hidden md:flex font-header item-list">
                 {links.map(({i, link}) => (
-                    <li key={i} class = "px-10 cursor-pointer item"><Link to={link} smooth duration ={500} offset = {-50}>{link}</Link></li>
+                    <li key={i} class = "px-10 cursor-pointer item"><Link to={link} smooth duration ={1400} offset = {-25}>{link}</Link></li>
                 ))}
             </ul>
         </div>

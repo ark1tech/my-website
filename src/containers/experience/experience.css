@@ -86,14 +86,6 @@
     -webkit-text-fill-color: transparent;
 }
 
-#experience:has(.exp-title:hover) .word1:not(.exp-title){
-    opacity: 0.2;
-}
-
-.word1 {
-    transition: opacity 200ms ease-in-out;
-}
-
 .exp-title{
     animation: background-pan 2.5s linear infinite;
     background: linear-gradient(
