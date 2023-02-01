@@ -1,4 +1,4 @@
-:root {  
+:root {
   --purple: rgb(123, 31, 162);
   --violet: rgb(103, 58, 183);
   --pink: rgb(244, 143, 177);
@@ -10,62 +10,78 @@
   from {
     background-position: 0% center;
   }
-  
+
   to {
     background-position: -100% center;
   }
 }
 
 @keyframes float {
-  from, to {
+  from,
+  to {
     transform: translate(-20%, -0%);
   }
-  
-  50% {    
+
+  50% {
     transform: translate(0%, -20%);
   }
 }
 
+@keyframes float2 {
+  from,
+  to {
+    transform: translate(-10%, -0%);
+  }
+
+  50% {
+    transform: translate(0%, -10%);
+  }
+}
+;;
 .under {
-    cursor: pointer;
-    background: 
-    linear-gradient(to right, rgba(244, 143, 177, 1), rgba(255, 0, 180, 1), rgba(123, 31, 162, 1));
-    background-size: 0 0.1em, 100% 0.1em;
-    background-position: 100% 100%, 0 100%;
-    background-repeat: no-repeat;
-    transition: background-size 400ms ease;
+  cursor: pointer;
+  background: linear-gradient(
+    to right,
+    rgba(244, 143, 177, 1),
+    rgba(255, 0, 180, 1),
+    rgba(123, 31, 162, 1)
+  );
+  background-size: 0 0.1em, 100% 0.1em;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms ease;
 }
 
 .under:hover {
-    background-size: 100% 0.1em, 0 0.1em;
+  background-size: 100% 0.1em, 0 0.1em;
 }
 
-.pro-title span{
-    font-family: Space Grotesk;
-    font-weight: bold;
-    line-height: 1.1;
-    display: inline-block;
-    animation: background-pan 5s linear infinite;
-    transition: all 800ms ease;
-    background: linear-gradient(
-        to right, 
-        var(--purple),
-        var(--violet),
-        var(--pink),
-        var(--purple)
-    );
-    background-size: 1000%;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    white-space: nowrap;
+.pro-title span {
+  font-family: Space Grotesk;
+  font-weight: bold;
+  line-height: 1.1;
+  display: inline-block;
+  animation: background-pan 5s linear infinite;
+  transition: all 800ms ease;
+  background: linear-gradient(
+    to right,
+    var(--purple),
+    var(--violet),
+    var(--pink),
+    var(--purple)
+  );
+  background-size: 1000%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  white-space: nowrap;
 }
 
-.pro-title > .outer2{
-    transition: all 800ms ease;
+.pro-title > .outer2 {
+  transition: all 800ms ease;
 }
 
-.pro-title:hover > .outer2{
-    transition-duration: 800ms;
+.pro-title:hover > .outer2 {
+  transition-duration: 800ms;
 }
 
 .pro-title:hover > .outer2 > .inner2 {
@@ -73,64 +89,74 @@
 }
 
 .pro-title:hover > .outer2 > .inner2 > .letter2 {
-    animation: background-pan 5s linear infinite;
-    transition: all 800ms ease;
-    background: linear-gradient(
-        to right, 
-        var(--purple),
-        var(--violet),
-        var(--pink),
-        var(--purple)
-    );
-    background-size: 1000%;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    white-space: nowrap;
+  animation: background-pan 5s linear infinite;
+  transition: all 800ms ease;
+  background: linear-gradient(
+    to right,
+    var(--purple),
+    var(--violet),
+    var(--pink),
+    var(--purple)
+  );
+  background-size: 1000%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  white-space: nowrap;
 }
 
-.inner2{
-    animation-delay: -5000ms;
+.inner2 {
+  animation-delay: -5000ms;
 }
 
-.letter2{
-    animation-delay: 9000ms;
+.letter2 {
+  animation-delay: 9000ms;
 }
 
 .pro-title:hover > .outer2:nth-child(8) {
-    transform: translate(-625%, 0%) rotate(-8deg) scale(120%, 120%);
-    transition-duration: 800ms;
+  transform: translate(-625%, 0%) rotate(-8deg) scale(120%, 120%);
+  transition-duration: 800ms;
 }
 .pro-title:hover > .outer2:nth-child(6) {
-    transform: translate(-279%, 10%) rotate(-270deg) scale(120%, 120%);
-    transition-duration: 800ms;
+  transform: translate(-279%, 10%) rotate(-270deg) scale(120%, 120%);
+  transition-duration: 800ms;
 }
 .pro-title:hover > .outer2:nth-child(1) {
-    transform: translate(360%, 10%) rotate(8deg) scale(120%, 120%);
-    transition-duration: 800ms;
+  transform: translate(360%, 10%) rotate(8deg) scale(120%, 120%);
+  transition-duration: 800ms;
 }
 
 .pro-title:hover > .outer2:nth-child(2) {
-    transform: translate(610%, -10%) rotate(-12deg) scale(120%, 120%);
-    transition-duration: 800ms;
+  transform: translate(610%, -10%) rotate(-12deg) scale(120%, 120%);
+  transition-duration: 800ms;
 }
 
 .pro-title:hover > .outer2:nth-child(3) {
-    transform: translate(420%, 0%) rotate(8deg) scale(120%, 120%);
-    transition-duration: 800ms;
+  transform: translate(420%, 0%) rotate(8deg) scale(120%, 120%);
+  transition-duration: 800ms;
 }
 
 .pro-title:hover > .outer2:nth-child(4) {
-    transform: translate(1020%, -20%) rotate(189deg) scale(120%, 120%);
-    transition-duration: 800ms;
+  transform: translate(1020%, -20%) rotate(189deg) scale(120%, 120%);
+  transition-duration: 800ms;
 }
 
 .pro-title:hover > .outer2:nth-child(5) {
-    opacity: 0;
-    transform: scale(0%, 0%);
-    transition-duration: 800ms;
+  opacity: 0;
+  transform: scale(0%, 0%);
+  transition-duration: 800ms;
 }
 .pro-title:hover > .outer2:nth-child(7) {
-    opacity: 0;
-    transform: scale(0%, 0%);
-    transition-duration: 800ms;
+  opacity: 0;
+  transform: scale(0%, 0%);
+  transition-duration: 800ms;
+}
+
+.splinez {
+  animation: float2 4s ease infinite;
+}
+
+.icon-card {
+  background-color: rgba (255, 255, 255, 0.01);
+  backdrop-filter: blur(3.5px);
+  -webkit-backdrop-filter: blur(3.5px);
 }

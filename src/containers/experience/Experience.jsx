@@ -22,7 +22,7 @@ const Experience = () => {
       
     return (
         <div id = "experience" class = "flex-col sticky md:px-40 px-10 py-20">
-            <h1 data-aos="slide-right" data-aos-delay="25" data-aos-duration="1000" class ="text-left w-fit cursor-pointer exp-title font-header text-6xl md:text-9xl font-bold">
+            <h1 data-aos="slide-right" data-aos-delay="10" data-aos-duration="1000" class ="text-left w-fit cursor-pointer exp-title font-header text-6xl md:text-9xl font-bold">
             <span class = "outer1">
               <span class = "inner1">
                 <span class = "letter1">e</span>
@@ -75,7 +75,7 @@ const Experience = () => {
             </span>
             </h1>
             <div id = "deck">
-              <div data-aos="zoom-in-down" data-aos-delay="100" data-aos-duration="1000" class = "word1 top-0 pb-10 pt-20"> 
+              <div data-aos="zoom-in-down" data-aos-delay="125" data-aos-duration="1000" class = "word1 top-0 pb-10 pt-20"> 
                 <a class = "hover:scale-[1.01] transition-transform duration-300 items-center flex md:flex-row flex-col" href ="https://www.facebook.com/UPCURSOR" target="_blank" rel="noopener noreferrer">
                   <img class = "md:mr-10 mr-0 md:mb-0 mb-10 h-20 w-20" src={require("../../assets/kerser.png")} alt ="CURSOR logo"></img>
                   <h1 class = "org-date text-white text-4xl font-semibold tracking-[0.2em]"> UP Association of Computer Science Majors (UP CURSOR) </h1>

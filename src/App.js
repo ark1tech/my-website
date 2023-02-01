@@ -23,10 +23,10 @@ function App() {
           <Header />
         </div>
         <div>
-          <Experience />
+          <Projects />
         </div>
         <div>
-          <Projects />
+          <Experience />
         </div>
       </div>
     </div>

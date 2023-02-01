@@ -1,27 +1,28 @@
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Anek+Gurmukhi:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anek+Gurmukhi:wght@100;200;300;400;500;600;700;800&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
-    html {
-        font-family: 'Work Sans', serif;
-    }
+  html {
+    font-family: "Work Sans", serif;
+  }
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   width: 0.5em;
+  height: 0.5em;
 }
 
 ::-webkit-scrollbar-track {
   background: transparent;
 }
- 
+
 ::-webkit-scrollbar-thumb {
-  background: rgb(103, 58, 183, 0.3); 
+  background: rgb(103, 58, 183, 0.3);
   border-radius: 20px;
 }
 
@@ -30,32 +31,31 @@
 }
 
 body {
-    background-color:black;
+  background-color: black;
 }
 
 .scale-up-center {
-	-webkit-animation: scale-up-center 0.4s ease-in-out both;
-	        animation: scale-up-center 0.4s ease-in-out both;
+  -webkit-animation: scale-up-center 0.4s ease-in-out both;
+  animation: scale-up-center 0.4s ease-in-out both;
 }
 
 @-webkit-keyframes scale-up-center {
   0% {
     -webkit-transform: scale(0.5);
-            transform: scale(0.5);
+    transform: scale(0.5);
   }
   100% {
     -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
 }
 @keyframes scale-up-center {
   0% {
     -webkit-transform: scale(0.5);
-            transform: scale(0.5);
+    transform: scale(0.5);
   }
   100% {
     -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
 }
-

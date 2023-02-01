@@ -3,7 +3,7 @@ import './header.css'
 
 const Header = () => {
   return (
-    <div id = "home" class = "snap-start flex md:flex-row flex-col pt-[12rem] pb-[9.5rem] md:px-40 px-10 justify-center">
+    <div id = "home" class = "h-screen items-center snap-start flex md:flex-row flex-col pb-[12rem] pt-[15rem] md:px-40 px-10 justify-center">
       <div id = "text">
         <p class = "word text-center w-full text-white font-[200] font-info tracking-[0.3em]"> HELLO THERE! 👋 MY NAME IS</p>
         <div id = "hero">
