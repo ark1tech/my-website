@@ -175,3 +175,27 @@ input:-webkit-autofill:active {
     );
     z-index: -3;
 }
+
+@keyframes background-pan2 {
+  from {
+    background-position: 0% center;
+  }
+  
+  to {
+    background-position: -200% center;
+  }
+}
+
+.contact-anime{
+    animation: background-pan2 5s linear infinite;
+    background: linear-gradient(
+        to right, 
+        var(--purple),
+        var(--violet),
+        var(--pink),
+        var(--purple)
+    );
+    background-size: 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

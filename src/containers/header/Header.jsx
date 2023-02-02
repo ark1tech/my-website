@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-scroll'; 
 import './header.css'
 
 const Header = () => {
@@ -75,7 +76,9 @@ const Header = () => {
         <div class = "word flex flex-col items-center mx-auto">
           <div class="w-fit rounded-[1.25em] bg-gradient-to-br from-pink-400 via-violet-500 to-purple-500 p-[0.125em]">
             <div class="cursor-pointer flex w-fit rounded-[1.25em] items-center justify-center bg-black hover:bg-transparent duration-1000 back px-6 py-1">
-              <h1 class="font-semibold text-white">CONTACT ME</h1>
+              <Link to ="contact" smooth duration ={1400} offset={-25}>
+                <h1 class="font-semibold text-white">CONTACT ME</h1>
+              </Link>
             </div>
           </div>
           {/* <h1 class = "pt-[2rem] text-white underline underline-offset-[10px]"> VIEW RESUME </h1>  */}
