@@ -10,7 +10,7 @@ import { SiFigma,
          SiJava,
          SiTailwindcss
   } from 'react-icons/si';
-import { BsArrowRight, BsArrowDown } from 'react-icons/bs';
+import { BsArrowRight } from 'react-icons/bs';
 
 
 const Projects = () => {
