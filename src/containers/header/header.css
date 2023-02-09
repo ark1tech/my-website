@@ -159,17 +159,3 @@
     transform: scale(0%, 0%);
     transition-duration: 800ms;
 }
-/*
-.under {
-  background: 
-    linear-gradient(to right, rgba(244, 143, 177, 1), rgba(255, 0, 180, 1), rgba(123, 31, 162, 1));
-  background-size: 0 0.1em, 100% 0.1em;
-  background-position: 100% 100%, 0 100%;
-  background-repeat: no-repeat;
-  transition: background-size 400ms ease;
-}
-
-.under:hover {
-  background-size: 100% 0.1em, 0 0.1em;
-}
-*/

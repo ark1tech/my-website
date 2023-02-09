@@ -76,7 +76,7 @@ const Projects = () => {
                         <SiAdobeillustrator size ={35} />
                       </div>
                     </div>
-                    <Spline class ="md:scale-[1] scale-[0.5]" scene="https://prod.spline.design/NvcNCgGmONQmmVUG/scene.splinecode" />
+                    <Spline class ="md:scale-[1] scale-[0.5] md:m-0 -m-[3rem]" scene="https://prod.spline.design/NvcNCgGmONQmmVUG/scene.splinecode" />
                   </div>  
                   <div>
                     <p class = "timeline-date font-light text-white">DECEMBER 2022</p>
@@ -108,7 +108,7 @@ const Projects = () => {
                         <SiJava size ={35} />
                       </div>
                     </div>
-                    <Spline  scene="https://prod.spline.design/gsoKQX9wUGvXOt7q/scene.splinecode" />
+                    <Spline class ="md:scale-[1] scale-[0.5] md:m-0 -m-[3rem]" scene="https://prod.spline.design/gsoKQX9wUGvXOt7q/scene.splinecode" />
                   </div>  
                   <div>
                     <p class = "timeline-date font-light text-white">MAY 2022</p>
@@ -155,22 +155,22 @@ const Projects = () => {
                         <SiCss3 size ={35} />
                       </div>
                     </div>
-                    <Spline scene="https://prod.spline.design/SgHRN5EjFhLDKUZs/scene.splinecode" />
+                    <Spline class ="md:scale-[1] scale-[0.5] md:m-0 -m-[3rem]" scene="https://prod.spline.design/SgHRN5EjFhLDKUZs/scene.splinecode" />
                   </div>  
                   <div>
                     <p class = "timeline-date font-light text-white">JANUARY 2023</p>
                     <h3 class = "anime text-2xl font-semibold text-white my-5"> Uhhh... this website </h3>
                     <p class = "ml-7 list-disc font-normal text-white">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. <span class = " text-purple-300 font-header">Sed euismod euismod tempor</span>. Quisque non facilisis augue. 
-                    Fusce varius, eros non commodo suscipit, <span class = " text-purple-300 font-header">sapien velit bibendum justo, vel sagittis velit risus at dolor</span>.
-                    Proin commodo, lacus eu rutrum tempor, sapien diam luctus nunc. 
+                      I had been planning to make a personal website for a long time and I am glad I finally did it! 
+                      This website was made using React and Tailwind with touches of some JS libraries. 
+                      I am really proud of how this turned out because what I had envisioned was brought to life.
                     <br/> <br/>
-                    Just kidding... this website showcases my personality and skills as a frontend developer.
-                    I hope you liked it! 💜
+                      This showcases my personality and skills as a frontend developer. <br/>
+                      I hope you like it! 💜
                     </p>
                     <div class = "flex flex-row cursor-pointer text-1xl font-semibold text-white mt-10">
-                        <BsArrowDown size = {20} class = "mr-2 mt-[0.1rem]" />
-                        <a class = "font-header under">Continue scrolling down! </a>
+                        <BsArrowRight size = {20} class = "mr-2 mt-[0.1rem]" />
+                        <a href = "https://github.com/ark1tech/my-website" target="_blank" rel="noopener noreferrer" class = "font-header under">View on GitHub</a>
                     </div>
                   </div>
                 </div>

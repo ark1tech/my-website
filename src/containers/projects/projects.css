@@ -37,24 +37,6 @@
     transform: translate(0%, -10%);
   }
 }
-;;
-.under {
-  cursor: pointer;
-  background: linear-gradient(
-    to right,
-    rgba(244, 143, 177, 1),
-    rgba(255, 0, 180, 1),
-    rgba(123, 31, 162, 1)
-  );
-  background-size: 0 0.1em, 100% 0.1em;
-  background-position: 100% 100%, 0 100%;
-  background-repeat: no-repeat;
-  transition: background-size 400ms ease;
-}
-
-.under:hover {
-  background-size: 100% 0.1em, 0 0.1em;
-}
 
 .pro-title span {
   font-family: Space Grotesk;
@@ -153,6 +135,7 @@
 
 .splinez {
   animation: float2 4s ease infinite;
+  @apply xl:inline-block hidden 
 }
 
 .icon-card {

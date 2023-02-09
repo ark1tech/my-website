@@ -121,7 +121,7 @@
     rgba(255, 0, 180, 1),
     rgba(123, 31, 162, 1)
   );
-  transition: width 300ms ease-out;
+  transition: width 400ms ease-out;
   background-repeat: no-repeat;
 }
 .under:hover::before {
