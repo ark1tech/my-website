@@ -67,7 +67,7 @@ const Projects = () => {
               </div>
               <div class ="flex flex-col justify-start">
                 <div data-aos="flip-up" data-aos-delay="100" data-aos-duration="1000" class = "card flex md:flex-row flex-col p-10 md:ml-20 ml-5 rounded-[10px] border-solid border-white border-opacity-[0.1] border-[1px]">
-                  <div class = "order-2 splinez w-fit -mt-[8rem] -mb-[10rem] md:-mr-[4rem] mr-[20rem]">
+                  <div class = "z-[2] order-2 splinez w-fit -mt-[8rem] -mb-[10rem] md:-mr-[4rem] mr-[20rem]">
                     <div class = "text-purple-300 absolute right-[3rem] bottom-[6rem] flow flow-col space-y-3">
                       <div class= "icon-card w-fit h-fit  p-5 border-solid border-white border-[1px] border-opacity-[0.1] rounded-[10px]">
                         <SiFigma size ={35} />
@@ -76,7 +76,7 @@ const Projects = () => {
                         <SiAdobeillustrator size ={35} />
                       </div>
                     </div>
-                    <Spline class ="md:scale-[1] scale-[0.5] md:m-0 -m-[3rem]" scene="https://prod.spline.design/NvcNCgGmONQmmVUG/scene.splinecode" />
+                    <Spline class ="z-[1] md:scale-[1] scale-[0.5] md:m-0 -m-[3rem]" scene="https://prod.spline.design/NvcNCgGmONQmmVUG/scene.splinecode" />
                   </div>  
                   <div>
                     <p class = "timeline-date font-light text-white">DECEMBER 2022</p>
@@ -95,7 +95,7 @@ const Projects = () => {
                 </div>
               </div>
           </div>
-          <div id = "cards" class = "word1 relative z-[1]">
+          <div id = "cards" class = "word1 relative z-[2]">
               <div class = "animate-pulse">
               <div class = "dot absolute bg-[#ad14ff] mt-[15rem] -ml-[0.65rem] h-5 w-5 rounded-full border-4 border-black ">
               </div>
@@ -103,12 +103,12 @@ const Projects = () => {
               <div class ="flex flex-col justify-start">
                 <div data-aos="flip-up" data-aos-delay="100" data-aos-duration="1000" class = "card flex md:flex-row flex-col p-10 md:ml-20 ml-5 rounded-[10px] border-solid border-white border-opacity-[0.1] border-[1px]">
                   <div class = "order-2 md:scale-[1] scale-[0.5] splinez ml-[2rem] -mb-[4.7rem]">
-                    <div div class = "text-purple-300 absolute right-0 bottom-[3rem] flow flow-col space-y-3">
+                    <div div class = " text-purple-300 absolute right-0 bottom-[3rem] flow flow-col space-y-3 z-[2]">
                       <div class= "icon-card w-fit h-fit  p-5 border-solid border-white border-[1px] border-opacity-[0.1] rounded-[10px]">
                         <SiJava size ={35} />
                       </div>
                     </div>
-                    <Spline class ="md:scale-[1] scale-[0.5] md:m-0 -m-[3rem]" scene="https://prod.spline.design/gsoKQX9wUGvXOt7q/scene.splinecode" />
+                    <Spline class ="z-[1] md:scale-[1] scale-[0.5] md:m-0 -m-[3rem]" scene="https://prod.spline.design/gsoKQX9wUGvXOt7q/scene.splinecode" />
                   </div>  
                   <div>
                     <p class = "timeline-date font-light text-white">MAY 2022</p>
@@ -130,7 +130,7 @@ const Projects = () => {
                 </div>
               </div>
           </div>
-          <div id = "cards" class = "word1 relative z-[2]">
+          <div id = "cards" class = "word1 relative z-[1]">
               <div class = "animate-pulse">
               <div class = "dot absolute bg-[#ad14ff] mt-[15rem] -ml-[0.65rem] h-5 w-5 rounded-full border-4 border-black ">
               </div>
@@ -138,7 +138,7 @@ const Projects = () => {
               <div class ="flex flex-col justify-start">
                 <div data-aos="flip-up" data-aos-delay="100" data-aos-duration="1000" class = "card flex md:flex-row flex-col p-10 md:ml-20 ml-5 rounded-[10px] border-solid border-white border-opacity-[0.1] border-[1px]">
                   <div class = "order-2 md:scale-[1] scale-[0.5] splinez ml-[2rem] -mb-[4.7rem]">
-                    <div div class = "text-purple-300 absolute right-0 bottom-[3rem] flow flow-col space-y-3">
+                    <div div class = "z-[2] text-purple-300 absolute right-0 bottom-[3rem] flow flow-col space-y-3">
                       <div class= "icon-card w-fit h-fit  p-5 border-solid border-white border-[1px] border-opacity-[0.1] rounded-[10px]">
                         <SiReact size ={35} />
                       </div>
@@ -155,7 +155,7 @@ const Projects = () => {
                         <SiCss3 size ={35} />
                       </div>
                     </div>
-                    <Spline class ="md:scale-[1] scale-[0.5] md:m-0 -m-[3rem]" scene="https://prod.spline.design/SgHRN5EjFhLDKUZs/scene.splinecode" />
+                    <Spline class ="z-[1] md:scale-[1] scale-[0.5] md:m-0 -m-[3rem]" scene="https://prod.spline.design/SgHRN5EjFhLDKUZs/scene.splinecode" />
                   </div>  
                   <div>
                     <p class = "timeline-date font-light text-white">JANUARY 2023</p>
