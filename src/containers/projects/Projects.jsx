@@ -162,7 +162,7 @@ const Projects = () => {
                     <h3 class = "anime text-2xl font-semibold text-white my-5"> Uhhh... this website </h3>
                     <p class = "ml-7 list-disc font-normal text-white">
                       I had been planning to make a personal website for a long time and I am glad I finally did it! 
-                      This website was made using React and Tailwind with touches of some JS libraries. 
+                      This website was made using <span class = " text-purple-300 font-header">React and Tailwind</span> with touches of some JS libraries. 
                       I am really proud of how this turned out because what I had envisioned was brought to life.
                     <br/> <br/>
                       This showcases my personality and skills as a frontend developer. <br/>
