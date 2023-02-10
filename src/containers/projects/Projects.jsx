@@ -67,8 +67,8 @@ const Projects = () => {
               </div>
               <div class ="flex flex-col justify-start">
                 <div data-aos="flip-up" data-aos-delay="100" data-aos-duration="1000" class = "card flex md:flex-row flex-col p-10 md:ml-20 ml-5 rounded-[10px] border-solid border-white border-opacity-[0.1] border-[1px]">
-                  <div class = "z-[2] order-2 splinez w-fit -mt-[8rem] -mb-[10rem] md:-mr-[4rem] mr-[20rem]">
-                    <div class = "text-purple-300 absolute right-[3rem] bottom-[6rem] flow flow-col space-y-3">
+                  <div class = " order-2 splinez w-fit -mt-[8rem] -mb-[10rem] md:-mr-[4rem] mr-[20rem]">
+                    <div class = "z-[2] text-purple-300 absolute right-[3rem] bottom-[6rem] flow flow-col space-y-3">
                       <div class= "icon-card w-fit h-fit  p-5 border-solid border-white border-[1px] border-opacity-[0.1] rounded-[10px]">
                         <SiFigma size ={35} />
                       </div>
